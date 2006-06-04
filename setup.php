@@ -25,7 +25,8 @@ class CSetupTickets {
   activity int(10) unsigned DEFAULT '0' NOT NULL,
   priority tinyint(1) unsigned DEFAULT '1' NOT NULL,
   cc varchar(100) DEFAULT '' NOT NULL,
-  body text NOT NULL,
+  body text NOT NULL, 
+  signature text,
   PRIMARY KEY (ticket),
   KEY parent (parent),
   KEY type (type)
